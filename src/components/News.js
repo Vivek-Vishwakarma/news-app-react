@@ -15,7 +15,7 @@ const News = ({ cat, apiKey }) => {
     );
     let data = await response.json();
     console.log(data)
-    setNewsapi(data.data);
+    setNewsapi(data.news);
     setLoading(false);
   };
   useEffect(() => {
@@ -31,7 +31,7 @@ const News = ({ cat, apiKey }) => {
     );
    
     let data = await response.json();
-    setNewsapi(data.data);
+    setNewsapi(data.news);
     setLoading(false);
     console.log(page)
 
@@ -43,7 +43,7 @@ const News = ({ cat, apiKey }) => {
       `https://api.currentsapi.services/v1/search?apiKey=lEmOc5ny7vKnv9bZrQmZ-pu6cEP1fIytUqF_hdZsYXgOoS01&category=${cat}&page_number=${page-1}`
     );
     let data = await response.json();
-    setNewsapi(data.data);
+    setNewsapi(data.news);
     setLoading(false);
     console.log(page)
   };
@@ -108,23 +108,23 @@ const News = ({ cat, apiKey }) => {
                     loading="lazy"
                     className="card-img-top"
                     src={
-                       !element.imageUrl
+                       element.image === "None"
                         ? "https://i2.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?fit=845%2C503&ssl=1"
-                        : element.imageUrl
+                        : element.image
                     }
                     alt={element.author}
                   />
                   <div className="card-body">
                     <p className="card-text">
-                      {element.date.slice(0, 11)}
+                      {element.published.slice(0, 11)}
                     </p>
                     <p className="card-text">{element.author}</p>
                     <h5 className="card-title">
                       {element.title ? element.title.slice(0, 80) : ""}
                     </h5>
                     <p className="card-text">
-                      {element.content
-                        ? element.content.slice(0, 130)
+                      {element.description
+                        ? element.description.slice(0, 130)
                         : ""}
                     </p>
                     <a
