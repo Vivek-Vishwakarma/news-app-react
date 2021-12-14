@@ -77,6 +77,11 @@ function Nav() {
                       Technology
                     </Link>
                   </li>
+                  <li>
+                    <Link className="dropdown-item" to="game">
+                      Game
+                    </Link>
+                  </li>
                 </ul>
               </li>
             </ul>

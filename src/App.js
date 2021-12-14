@@ -2,7 +2,6 @@ import Nav from './components/Nav'
 import News from './components/News'
 
 import './App.css';
-import Header from './components/Header';
 import React from 'react'
 import {
   BrowserRouter as Router,
@@ -17,28 +16,30 @@ function App() {
     <>
       <Router>
         <Nav />
-        <Header />
         <Switch>
           <Route exact path="/news-app-react">
-            <News key="general" size={9} apiKey={apiKey} country={'in'} cat={'general'} />
+            <News key="general" apiKey={apiKey} cat={'general'} />
           </Route>
           <Route exact path="/general">
-            <News key="general" size={9} apiKey={apiKey} country={'in'} cat={'general'} />
+            <News key="general" apiKey={apiKey}  cat={'general'} />
           </Route>
           <Route exact path="/business"> 
-            <News key="business" size={9} apiKey={apiKey} country={'in'} cat={'business'} />
+            <News key="business" apiKey={apiKey}  cat={'business'} />
           </Route>
           <Route exact path="/science">
-            <News key="science" size={9} apiKey={apiKey} country={'in'} cat={'science'} />
+            <News key="science" apiKey={apiKey}  cat={'science'} />
           </Route>
           <Route exact path="/entertainment">
-            <News key="entertainment" size={9} apiKey={apiKey} country={'in'} cat={'entertainment'} />
+            <News key="entertainment" apiKey={apiKey}  cat={'entertainment'} />
           </Route>
           <Route exact path="/health">
-            <News key="health" size={9} apiKey={apiKey} country={'in'} cat={'health'} />
+            <News key="health"  apiKey={apiKey}  cat={'health'} />
           </Route>
           <Route exact path="/technology">
-            <News key="technology" size={9} apiKey={apiKey} country={'in'} cat={'technology'} />
+            <News key="technology" apiKey={apiKey}  cat={'technology'} />
+          </Route>
+          <Route exact path="/game">
+            <News key="technology" apiKey={apiKey}  cat={'game'} />
           </Route>
         </Switch>
       </Router>
