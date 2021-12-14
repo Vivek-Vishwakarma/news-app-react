@@ -10,11 +10,8 @@ const News = ({ cat, apiKey }) => {
 
   const getNews = async () => {
     setLoading(true);
-    // const response = await fetch(
-    //   `https://api.currentsapi.services/v1/search?apiKey=${apiKey}&category=${cat}&page_number=${page}`
-    // );
     const response = await fetch(
-      `https://inshortsapi.vercel.app/news?category=${cat}&page=${page}`
+      `https://api.currentsapi.services/v1/search?apiKey=lEmOc5ny7vKnv9bZrQmZ-pu6cEP1fIytUqF_hdZsYXgOoS01&category=${cat}&page_number=${page}`
     );
     let data = await response.json();
     console.log(data)
@@ -29,12 +26,10 @@ const News = ({ cat, apiKey }) => {
   const Next = async () => {
     setLoading(true);
     setPage(page+1)
-    // const response = await fetch(
-    //   `https://api.currentsapi.services/v1/search?apiKey=${apiKey}&category=${cat}&page_number=${page+1}`
-    // );
     const response = await fetch(
-      `https://inshortsapi.vercel.app/news?category=${cat}&page=${page+1}`
+      `https://api.currentsapi.services/v1/search?apiKey=lEmOc5ny7vKnv9bZrQmZ-pu6cEP1fIytUqF_hdZsYXgOoS01&category=${cat}&page_number=${page+1}`
     );
+   
     let data = await response.json();
     setNewsapi(data.data);
     setLoading(false);
@@ -44,11 +39,8 @@ const News = ({ cat, apiKey }) => {
   const Prev = async () => {
     setLoading(true);
     setPage(page-1)
-    // const response = await fetch(
-    //   `https://api.currentsapi.services/v1/search?apiKey=${apiKey}&category=${cat}&page_number=${page-1}`
-    // );
     const response = await fetch(
-      `https://inshortsapi.vercel.app/news?category=${cat}&page=${page-1}`
+      `https://api.currentsapi.services/v1/search?apiKey=lEmOc5ny7vKnv9bZrQmZ-pu6cEP1fIytUqF_hdZsYXgOoS01&category=${cat}&page_number=${page-1}`
     );
     let data = await response.json();
     setNewsapi(data.data);
