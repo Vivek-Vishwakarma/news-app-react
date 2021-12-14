@@ -18,7 +18,7 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/news-app-react">
-            <News key="general" apiKey={apiKey} cat={'general'} />
+            <News key="science" apiKey={apiKey} cat={'science'} />
           </Route>
           <Route exact path="/general">
             <News key="general" apiKey={apiKey}  cat={'general'} />
