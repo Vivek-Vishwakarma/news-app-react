@@ -11,7 +11,7 @@ const News = ({ cat, apiKey }) => {
   const getNews = async () => {
     setLoading(true);
     const response = await fetch(
-      `https://api.currentsapi.services/v1/search?apiKey=lEmOc5ny7vKnv9bZrQmZ-pu6cEP1fIytUqF_hdZsYXgOoS01&category=${cat}&page_number=${page}`
+      `https://api.currentsapi.services/v1/search?apiKey=${apiKey}&category=${cat}&page_number=${page}`
     );
     let data = await response.json();
     console.log(data)
@@ -27,7 +27,7 @@ const News = ({ cat, apiKey }) => {
     setLoading(true);
     setPage(page+1)
     const response = await fetch(
-      `https://api.currentsapi.services/v1/search?apiKey=lEmOc5ny7vKnv9bZrQmZ-pu6cEP1fIytUqF_hdZsYXgOoS01&category=${cat}&page_number=${page+1}`
+      `https://api.currentsapi.services/v1/search?apiKey=${apiKey}&category=${cat}&page_number=${page+1}`
     );
    
     let data = await response.json();
@@ -40,7 +40,7 @@ const News = ({ cat, apiKey }) => {
     setLoading(true);
     setPage(page-1)
     const response = await fetch(
-      `https://api.currentsapi.services/v1/search?apiKey=lEmOc5ny7vKnv9bZrQmZ-pu6cEP1fIytUqF_hdZsYXgOoS01&category=${cat}&page_number=${page-1}`
+      `https://api.currentsapi.services/v1/search?apiKey=${apiKey}&category=${cat}&page_number=${page-1}`
     );
     let data = await response.json();
     setNewsapi(data.news);
