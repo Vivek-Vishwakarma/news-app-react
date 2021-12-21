@@ -9,7 +9,7 @@ function Nav() {
     <>
       <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand" to="/news-app-react">
             News App React
           </Link>
           <button
