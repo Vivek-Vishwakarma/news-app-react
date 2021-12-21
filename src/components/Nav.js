@@ -9,7 +9,7 @@ function Nav() {
     <>
       <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/news-app-react">
+          <Link exact className="navbar-brand" to="/news-app-react">
             News App React
           </Link>
           <button
@@ -26,7 +26,7 @@ function Nav() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <Link exact className="nav-link active" aria-current="page" to="/news-app-react">
                   Home
                 </Link>
               </li>
@@ -43,37 +43,37 @@ function Nav() {
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link className="dropdown-item" to="general">
+                    <Link exact className="dropdown-item" to="general">
                       General
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="business">
+                    <Link exact className="dropdown-item" to="business">
                       Business
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="science">
+                    <Link exact className="dropdown-item" to="science">
                       Science
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="entertainment">
+                    <Link exact className="dropdown-item" to="entertainment">
                       Entertainment
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="health">
+                    <Link exact className="dropdown-item" to="health">
                       Health
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="technology">
+                    <Link exact className="dropdown-item" to="technology">
                       Technology
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="game">
+                    <Link exact className="dropdown-item" to="game">
                       Game
                     </Link>
                   </li>
