@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -9,9 +9,9 @@ function Nav() {
     <>
       <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <Link exact className="navbar-brand" to="/news-app-react">
+          <NavLink exact className="navbar-brand" to="/news-app-react">
             News App React
-          </Link>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -26,12 +26,12 @@ function Nav() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link exact className="nav-link active" aria-current="page" to="/news-app-react">
+                <NavLink exact className="nav-link active" aria-current="page" to="/news-app-react">
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item dropdown">
-                <Link
+                <NavLink
                   className="nav-link dropdown-toggle"
                   to="#"
                   id="navbarDropdown"
@@ -40,42 +40,42 @@ function Nav() {
                   aria-expanded="false"
                 >
                   Categories
-                </Link>
+                </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link exact className="dropdown-item" to="general">
+                    <NavLink exact className="dropdown-item" to="general">
                       General
-                    </Link>
+                    </NavLink>
                   </li>
                   <li>
-                    <Link exact className="dropdown-item" to="business">
+                    <NavLink exact className="dropdown-item" to="business">
                       Business
-                    </Link>
+                    </NavLink>
                   </li>
                   <li>
-                    <Link exact className="dropdown-item" to="science">
+                    <NavLink exact className="dropdown-item" to="science">
                       Science
-                    </Link>
+                    </NavLink>
                   </li>
                   <li>
-                    <Link exact className="dropdown-item" to="entertainment">
+                    <NavLink exact className="dropdown-item" to="entertainment">
                       Entertainment
-                    </Link>
+                    </NavLink>
                   </li>
                   <li>
-                    <Link exact className="dropdown-item" to="health">
+                    <NavLink exact className="dropdown-item" to="health">
                       Health
-                    </Link>
+                    </NavLink>
                   </li>
                   <li>
-                    <Link exact className="dropdown-item" to="technology">
+                    <NavLink exact className="dropdown-item" to="technology">
                       Technology
-                    </Link>
+                    </NavLink>
                   </li>
                   <li>
-                    <Link exact className="dropdown-item" to="game">
+                    <NavLink exact className="dropdown-item" to="game">
                       Game
-                    </Link>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
