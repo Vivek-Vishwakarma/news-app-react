@@ -43,37 +43,37 @@ function Nav() {
                 </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <NavLink exact className="dropdown-item" to="general">
+                    <NavLink exact className="dropdown-item" to="/general">
                       General
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink exact className="dropdown-item" to="business">
+                    <NavLink exact className="dropdown-item" to="/business">
                       Business
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink exact className="dropdown-item" to="science">
+                    <NavLink exact className="dropdown-item" to="/science">
                       Science
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink exact className="dropdown-item" to="entertainment">
+                    <NavLink exact className="dropdown-item" to="/entertainment">
                       Entertainment
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink exact className="dropdown-item" to="health">
+                    <NavLink exact className="dropdown-item" to="/health">
                       Health
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink exact className="dropdown-item" to="technology">
+                    <NavLink exact className="dropdown-item" to="/technology">
                       Technology
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink exact className="dropdown-item" to="game">
+                    <NavLink exact className="dropdown-item" to="/game">
                       Game
                     </NavLink>
                   </li>
